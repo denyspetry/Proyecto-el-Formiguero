@@ -24,7 +24,7 @@ public class Cadena {
         this.nombre = nombre;
     }
 
-    public void añadirPrograma(Programa programa){
+    public void anyadirPrograma(Programa programa){
         listaProgramas.add(programa);
     }
 
@@ -32,8 +32,12 @@ public class Cadena {
         listaProgramas.remove(programa);
     }
 
+    public ArrayList<Programa> getListaProgramas(){
+        return listaProgramas;
+    }
+
     @Override
     public String toString(){
-        return "CADENA: " + nombre + ", PROGRAMAS: " + listaProgramas.size();
+        return "CADENA [Nombre = '" + nombre + "', Lista de Programas = '" + listaProgramas + "']";
     }
 }
